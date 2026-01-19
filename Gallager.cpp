@@ -1,5 +1,6 @@
 #include <iostream>
 
+// generateStartSubmatrix - генерация начальной подматрицы
 Matrix generateStartSubmatrix(uint cols, uint rows, uint d)
 {
 	uint rowDegree = cols / d;
@@ -18,6 +19,7 @@ Matrix generateStartSubmatrix(uint cols, uint rows, uint d)
 	return matrix;
 }
 
+// permutateSubmatrix - изменение подматрицы
 Matrix permutateSubmatrix(Matrix matrix)
 {
 	
@@ -25,6 +27,7 @@ Matrix permutateSubmatrix(Matrix matrix)
 	return newMatrix;
 }
 
+// makeMatrix - создание матрицы
 Matrix makeMatrix(uint n, uint k, uint d)
 {
 	// Генерируем начальную подматрицу
